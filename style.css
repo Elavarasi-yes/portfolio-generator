@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #1a1a1a;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 2px solid #ff69b4;
+  border-radius: 18px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+  border-color: #ff1493;
+}
+
+h1 {
+  text-align: center;
+  color: #ff1493;
+  font-size: 32px;
+  margin-bottom: 20px;
+  transition: color 0.4s ease;
+}
+
+.typing {
+  width: 22ch;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #ff69b4;
+  margin: 0 auto 25px;
+  animation: typing 3s steps(22), blink 0.7s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 22ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+form input, form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  background: #fafafa;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #ff69b4;
+  box-shadow: 0 0 8px rgba(255, 105, 180, 0.6);
+  background: #fff;
+  outline: none;
+}
+
+form button, #downloadBtn {
+  display: block;
+  width: 100%;
+  background: #ff69b4;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 14px;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+form button:hover, #downloadBtn:hover {
+  background: #ff1493;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 4px solid #ff69b4;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  border-color: #ff1493;
+}
+
+.portfolio-card {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 2px solid #ff69b4;
+  color: #1a1a1a;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.25);
+  border-color: #ff1493;
+}
+
+.portfolio-card section {
+  margin-top: 24px;
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.portfolio-card h2 {
+  color: #ff1493;
+  transition: color 0.4s ease;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+a {
+  color: #ff1493;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ff69b4;
+  text-decoration: underline;
+}

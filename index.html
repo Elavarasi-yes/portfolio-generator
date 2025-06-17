@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Portfolio</h1>
+    <form id="portfolioForm" enctype="multipart/form-data">
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <input type="text" id="phone" placeholder="Phone Number" required />
+      <input type="text" id="address" placeholder="Address" required />
+      <input type="date" id="birthdate" required />
+
+      <label>Upload Photo:</label>
+      <input type="file" id="photo" accept="image/*" required />
+      
+      <input type="text" id="college" placeholder="College" required />
+      <input type="text" id="course" placeholder="Course" required />
+      <textarea id="about" placeholder="About You" required></textarea>
+      <textarea id="skills" placeholder="Skills (comma separated)" required></textarea>
+      <textarea id="techInterests" placeholder="Technical Interests" required></textarea>
+      <textarea id="nonTechInterests" placeholder="Non-Technical Interests" required></textarea>
+      <textarea id="hobbies" placeholder="Hobbies" required></textarea>
+      <textarea id="achievements" placeholder="Achievements" required></textarea>
+      <textarea id="certifications" placeholder="Certifications" required></textarea>
+      <textarea id="internships" placeholder="Internships" required></textarea>
+      <input type="url" id="linkedin" placeholder="LinkedIn URL" />
+      <input type="url" id="github" placeholder="GitHub URL" />
+
+      
+
+      <button type="submit">Generate Portfolio</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
